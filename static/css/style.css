@@ -1,0 +1,137 @@
+
+html {
+  text-align: right;
+  direction: rtl;
+}
+
+body {
+  display: flex; 
+  flex-direction: column; 
+  font: 1em/1.2 Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+.head {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+}
+li {
+  width: 2fr !important;
+}
+
+#fun {
+  font-size: 3em;
+}
+.home {
+  background-color: whitesmoke;
+}
+
+.nav-btn {
+  width: 10%;
+}
+
+footer {
+  text-align: right;
+  direction: rtl;
+  padding: 20px;
+  margin-top: auto;
+}
+
+h1 {
+  background-color: rgb(165, 161, 161);
+  text-align: center;
+  font-size: 5vh;
+  color: white;
+  padding: 2vh;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 2vw;
+  overflow: hidden;
+  background-color: rgb(201, 194, 194);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #689eca;
+  cursor: pointer;
+}
+
+li.disable a:hover {
+  background-color: rgb(201, 194, 194);
+  cursor: not-allowed;
+}
+
+.active {
+  background-color: #4c82af;
+}
+
+.articale {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  grid-gap: 20px;
+  padding: 2em;
+  text-align: justify;
+}
+
+.gallery {
+  margin-top: 5px;
+  display: unset;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 0.5fr;
+  grid-gap: 10px;
+}
+
+div.gallery-item {
+  border: 5px solid grey;
+  
+}
+
+div.gallery-item img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: right;
+  text-size-adjust: 1fr;
+}
+
+@media only screen and (max-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

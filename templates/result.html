@@ -1,0 +1,31 @@
+
+{% extends "template.html" %}
+{% block navbar %}
+<li class="nav-btn"><a href="/">דף הבית</a></li>
+<li class="nav-btn"><a href="/search">חיפוש מדינה</a></li>
+<li class="nav-btn"><a href="/countries_by_flag">חיפוש לפי דגל</a></li>
+<li class="active disable nav-btn"><a href="#">תוצאות החיפוש</a></li>
+{% endblock navbar %}
+
+{% block page %}
+<main class="gallery">
+    <div class="justify-content-xl-center">
+        <div class="col-sm-6">
+            <div class="card bg-light mb-3 justify-content-lg-center" style="width: 25rem;">
+                <img src="{{flag}}" class="card-img-top" alt="{{name[:20]}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{name[:20]}}</h5>
+                    <ul class="list-group list-group-flush bg-light">
+                        <li class="list-group-item bg-light">Name: {{name}}</li>
+                        <li class="list-group-item bg-light">Capita: {{capital}}</li>
+                        <li class="list-group-item bg-light">Regiom: {{region}}</li>
+                        <li class="list-group-item bg-light">Population: {{population}}</li>
+                        <li class="list-group-item bg-light">Timezones: {{timezones}}</li>
+                </ul>
+                <a href="/countries_by_flag" class="btn btn-primary">חזור לחיפוש</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock page %}

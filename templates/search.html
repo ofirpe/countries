@@ -1,0 +1,21 @@
+{% extends "template.html" %}
+
+{% block navbar %}
+<li class="nav-btn"><a href="/">דף הבית</a></li>
+<li class="active nav-btn"><a href="#">חיפוש מדינה</a></li>
+<li class="nav-btn"><a href="/countries_by_flag">חיפוש לפי דגל</a></li>
+<li class="disable nav-btn"><a href="#">תוצאות החיפוש</a></li>
+{% endblock navbar %}
+
+{% block page %}
+<main>
+    <div class="articale">
+        <p>האתר בשלבי הקמה, בקרוב תתווסף אפשרות לחיפוש על פי נתוני מדינה
+            בינתיים הנה תמונה של דגל מדינה ישראל &#128521;
+        </p>
+        <picture>
+            <img src="https://restcountries.eu/data/isr.svg" alt="" />
+        </picture>
+    </div>
+</main>
+{% endblock page %}                  

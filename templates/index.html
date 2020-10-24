@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+
+{% block navbar %}
+<li class="active nav-btn "><a href="#">דף הבית</a></li>
+<li class="nav-btn"><a href="/search">חיפוש מדינה</a></li>
+<li class="nav-btn"><a href="/countries_by_flag">חיפוש לפי דגל</a></li>
+<li class="disable nav-btn"><a href="#">תוצאות החיפוש</a></li>
+{% endblock navbar %}
+
+{% block page %}
+<main>
+    <div class="articale">
+        <p>
+            באתר זה תוכלו למצוא מידע על מדינות שונות בעולם.
+            ניתן לחפש מדינה על פי שם המדינה או בלחיצה על דגל
+            השימוש באתר באחריות המשתמש, אם מצאת את הדגלים
+            לא הולמים או לא משעשעים, זאת בהחלט בעיה שלך.
+            תלונות לא יתקבלו בברכה ולכן גם לא יטופלו
+        </p>
+    </div>
+</main>
+{% endblock page %}
